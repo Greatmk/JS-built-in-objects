@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //数组去重，去掉数组中重复出现的元素，然后返回一个新的数组
+     var arr = ["a", "c", "a", "z", "a", "x", "a", "a", "z", "c", "x", "a", "x"];
+     //首先先定义一个新的数组
+     var newArr = [];
+     //遍历所有的元素
+     for(var i = 0; i<arr.length; i++){
+         var temp = arr[i];
+         //判断数组中的元素，如果没有的话就返回-1
+         if(newArr.indexOf(temp) == -1){
+             //把没有出现的元素，一次添加到新的数组
+             newArr.push(temp);
+         }
+     }
+     console.log(newArr);   // ["a", "c", "z", "x"] 
+    
+    </script>
+</body>
+</html>

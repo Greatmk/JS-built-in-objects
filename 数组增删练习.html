@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //练习一：var arr = ["刘备"];
+    //给数组添加内容：添加之后数组变成了["赵云","马超","刘备","关羽","张飞"]
+   
+
+    var arr = ["刘备"];
+    arr.push("关羽","张飞");
+    arr.unshift("赵云","马超");
+    console.log(arr);
+    //["赵云", "马超", "刘备", "关羽", "张飞"]
+
+
+    //给数组删除内容：删除之后，数组变成了["关羽","张飞"]
+   var arr =  ["赵云", "马超", "刘备", "关羽", "张飞"];
+   arr.shift();
+   arr.shift();
+   arr.shift();
+   console.log(arr);
+
+
+
+    //练习二：["赵云","马超","刘备","关羽","张飞"]
+    //把数组的最后一个变成数组的第一个元素：["张飞","赵云","马超","刘备","关羽"]
+    var arr =  ["赵云", "马超", "刘备", "关羽", "张飞"];
+    arr.unshift(arr.pop());
+    console.log(arr);
+
+
+    //把数组的第一个变成数组的最后一个元素：["马超","刘备","关羽","张飞","赵云"]
+    var arr =  ["赵云", "马超", "刘备", "关羽", "张飞"];
+   arr.push(arr.shift());
+    console.log(arr);
+
+
+      //数组翻转
+   var arr = [1,2,3,4,5];
+//    var newArr = arr.reverse();
+//    console.log(newArr);
+   console.log(arr.reverse());
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    //replace 替换
+    //第一个参数是准备替换的内容或字符串
+    //第二个参数是要替换为什么
+    var str = "aa bb show cc";
+    var arr = str.replace('bb','dd');
+    console.log(arr);//aa dd show cc
+
+
+        //把a换成!
+    //replace比较懒，只会换找到的第一个
+    var str = "abcdefgfedcba";
+    var newStr = str.replace("a", "!");
+//
+     //正则也比较懒，只会换找到的第一个  g:global
+   var newStr = str.replace(/a/g, "!");
+   console.log(newStr);
+
+</script>
+
+</body>
+</html>

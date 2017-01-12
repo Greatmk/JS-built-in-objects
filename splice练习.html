@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    // var arr = [4, 6, 7, 8, 3, 46, 8];
+    // //slice 切割  记住：两个参数都是下标  包头部包围
+    // var newArr = arr.slice(1,5);
+    // console.log(newArr);
+
+    // //splice 删除 
+    // //第一个参数是删除的位置
+    // //第二个参数是删除的个数
+    // var arr = [4, 6, 7, 8, 3, 46, 8];
+    // var newArr = arr.splice(1,4);
+    // console.log(newArr);
+
+
+    //从数组中截取一个新的数组[6,7,8,3],返回新的数组
+    //把下面的数组通过方法变成【1,1,1】
+    var arr = [6,7,8,3];
+    arr.unshift(1);//1,6,7,8,3
+    arr.splice(1,4,1,1);
+    console.log(arr);
+
+
+
+
+</script>
+</body>
+</html>
